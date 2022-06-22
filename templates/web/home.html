@@ -94,7 +94,7 @@
                                 <p>Personalization assumed up an excess of position in the showcasing space and has
                                     made each and every one of your messages exhausting and without feelings.</p>
                                 <div class="banner-left-btn">
-                                    <a href="contact.html" class="btn--base active">Contact Us</a>
+                                    <a href="{% url 'web:contact' %}" class="btn--base active">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +142,7 @@ End Banner
                     <p>Our motto includes the core values of the company and describes our philosophy. We moved
                         heaven and earth to make the company’s motto applicable to every member of the team.</p>
                     <div class="statistics-left-btn">
-                        <a href="about.html" class="custom-btn">Know More</a>
+                        <a href="{% url 'web:about' %}" class="custom-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -211,7 +211,7 @@ Start Overview
                     <p>Our motto includes the core values of the company and describes our philosophy. We moved
                         heaven and earth to make the company’s motto applicable to every member of the team.</p>
                     <div class="overview-btn">
-                        <a href="service.html" class="btn--base active">View All Services</a>
+                        <a href="{% url 'web:service' %}" class="btn--base active">View All Services</a>
                     </div>
                 </div>
             </div>
@@ -241,7 +241,7 @@ Start Service
                         <h3 class="title">IT Management</h3>
                         <p>We rank among the best in the US, Argentina, and Ukraine. Our apps get</p>
                         <div class="service-btn">
-                            <a href="service.html" class="custom-btn">Learn More <i
+                            <a href="{% url 'web:categoryproduct' %}" class="custom-btn">Learn More <i
                                     class="icon-Group-2361 ml-2"></i></a>
                         </div>
                     </div>
@@ -256,7 +256,7 @@ Start Service
                         <h3 class="title">Data Security</h3>
                         <p>We rank among the best in the US, Argentina, and Ukraine. Our apps get</p>
                         <div class="service-btn">
-                            <a href="service.html" class="custom-btn">Learn More <i
+                            <a href="{% url 'web:categoryproduct' %}" class="custom-btn">Learn More <i
                                     class="icon-Group-2361 ml-2"></i></a>
                         </div>
                     </div>
@@ -271,7 +271,7 @@ Start Service
                         <h3 class="title">Business Consulting</h3>
                         <p>We rank among the best in the US, Argentina, and Ukraine. Our apps get</p>
                         <div class="service-btn">
-                            <a href="service.html" class="custom-btn">Learn More <i
+                            <a href="{% url 'web:categoryproduct' %}" class="custom-btn">Learn More <i
                                     class="icon-Group-2361 ml-2"></i></a>
                         </div>
                     </div>
@@ -286,7 +286,7 @@ Start Service
                         <h3 class="title">QA & Testing</h3>
                         <p>We rank among the best in the US, Argentina, and Ukraine. Our apps get</p>
                         <div class="service-btn">
-                            <a href="service.html" class="custom-btn">Learn More <i
+                            <a href="{% url 'web:categoryproduct' %}" class="custom-btn">Learn More <i
                                     class="icon-Group-2361 ml-2"></i></a>
                         </div>
                     </div>
@@ -322,7 +322,7 @@ Start Project
                         <p>Credibly grow premier ideas rather than bricks-and-clicks strategic theme areas
                             distributed</p>
                         <div class="project-left-btn">
-                            <a href="project.html" class="btn--base active">View All Projects</a>
+                            <a href="" class="btn--base active">View All Projects</a>
                         </div>
                     </div>
                 </div>
@@ -341,7 +341,7 @@ Start Project
                                         <img src="{% static 'web/images/project/project-3.png' %}" alt="project">
                                         <div class="project-overlay">
                                             <div class="overlay-content">
-                                                <h4 class="title"><a href="project-details.html">Brand redesign
+                                                <h4 class="title"><a href="">Brand redesign
                                                         meanwhile <br> focusing product</a></h4>
                                             </div>
                                         </div>
@@ -352,7 +352,7 @@ Start Project
                                         <img src="{% static 'web/images/project/project-4.png' %}" alt="project">
                                         <div class="project-overlay">
                                             <div class="overlay-content">
-                                                <h4 class="title"><a href="project-details.html">Brand redesign
+                                                <h4 class="title"><a href="">Brand redesign
                                                         meanwhile <br> focusing product</a></h4>
                                             </div>
                                         </div>
@@ -363,7 +363,7 @@ Start Project
                                         <img src="{% static 'web/images/project/project-5.png' %}" alt="project">
                                         <div class="project-overlay">
                                             <div class="overlay-content">
-                                                <h4 class="title"><a href="project-details.html">Brand redesign
+                                                <h4 class="title"><a href="">Brand redesign
                                                         meanwhile <br> focusing product</a></h4>
                                             </div>
                                         </div>
@@ -425,7 +425,7 @@ Start About
                             focusing on client’s business challenges, needs, pain points and providing
                             business-goals-oriented software solutions.</p>
                         <div class="about-btn">
-                            <a href="contact.html" class="btn--base">Send Message</a>
+                            <a href="{% url 'web:contact' %}" class="btn--base">Send Message</a>
                         </div>
                     </div>
                 </div>
@@ -483,7 +483,7 @@ End Brand
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Start Team
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<section class="team-section two ptb-120">
+<!-- <section class="team-section two ptb-120">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
@@ -572,7 +572,7 @@ Start Team
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 End Team
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -770,8 +770,8 @@ Start Contact
                                         <g>
                                             <use xlink:href="#circlePathtwo" fill="none" />
                                             <text fill="#3249b3">
-                                                <textPath xlink:href="#circlePathtwo">Softim it solution Softim it
-                                                    solution Softim it solution Softim it solution</textPath>
+                                                <textPath xlink:href="#circlePathtwo">onflap it solution * onflap it
+                                                    solution * onflap it solution * onflap it solution</textPath>
                                             </text>
                                         </g>
                                     </svg>
@@ -831,7 +831,7 @@ End Contact
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Start Blog
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<section class="blog-section pb-120">
+<!-- <section class="blog-section pb-120">
     <div class="blog-element">
         <img src="{% static 'web/images/element/element-47.png' %}" alt="element">
     </div>
@@ -905,12 +905,10 @@ Start Blog
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 End Blog
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 {% endblock %}

@@ -5,14 +5,13 @@ from django.shortcuts import render
 def master(request):
     return render(request,'web/index.html')
 
-def about(request):
-    return render(request,'web/about.html')
+
 def home(request):
     return render(request,'web/home.html')
 
+def about(request):
+    return render(request,'web/about.html')
 
-def contact(request):
-    return render(request,'web/contact.html')
 
 def category(request):
     return render(request,'web/category.html')
@@ -42,3 +41,7 @@ def service(request):
 
 def servicedetails(request):
     return render(request,'web/servicedetails.html')
+
+
+def contact(request):
+    return render(request,'web/contact.html')
