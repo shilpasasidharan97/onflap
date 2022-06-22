@@ -11,4 +11,9 @@ urlpatterns = [
     path('category',views.category,name='category'),
     path('categoryproduct',views.categoryproduct,name='categoryproduct'),
     path('productdetails',views.productdetails,name='productdetails'),
+    path('career',views.career,name='career'),
+    path('careerdetails',views.careerdetails,name='careerdetails'),
+    path('careerapply',views.careerapply,name='careerapply'),
+    path('service',views.service,name='service'),
+    path('servicedetails',views.servicedetails,name='servicedetails'),
 ]

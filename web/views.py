@@ -23,3 +23,22 @@ def categoryproduct(request):
 
 def productdetails(request):
     return render(request,'web/product-details.html')
+
+def career(request):
+    return render(request,'web/career.html')
+
+
+def careerdetails(request):
+    return render(request,'web/careerdeatils.html')
+
+
+def careerapply(request):
+    return render(request,'web/careerapply.html')
+
+
+def service(request):
+    return render(request,'web/services.html')
+
+
+def servicedetails(request):
+    return render(request,'web/servicedetails.html')

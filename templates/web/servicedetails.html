@@ -1,0 +1,238 @@
+{% extends 'web/index.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Banner
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<section class="banner-section two inner">
+    <div class="banner-element-four two">
+        <img src="{% static 'web/images/element/element-5.png' %}" alt="element">
+    </div>
+    <div class="banner-element-five two">
+        <img src="{% static 'web/images/element/element-7.png' %}" alt="element">
+    </div>
+    <div class="banner-element-nineteen two">
+        <img src="{% static 'web/images/element/element-6.png' %}" alt="element">
+    </div>
+    <div class="banner-element-twenty-two two">
+        <img src="{% static 'web/images/element/element-69.png' %}" alt="element">
+    </div>
+    <div class="banner-element-twenty-three two">
+        <img src="{% static 'web/images/element/element-70.png' %}" alt="element">
+    </div>
+    <div class="container">
+        <div class="row justify-content-center align-items-center mb-30-none">
+            <div class="col-xl-12 mb-30">
+                <div class="banner-content two">
+                    <div class="banner-content-header">
+                        <h2 class="title">Service Deatils</h2>
+                        <div class="breadcrumb-area">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="{% url 'web:home' %}">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="{% url 'web:service' %}">Service</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Service Details </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+End Banner
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Start Scroll-To-Top
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="#" class="scrollToTop"><i class="las la-angle-double-up"></i></a>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+End Scroll-To-Top
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Gallery
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<section class="gallery-section ptb-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-12">
+                <div class="gallery-item details">
+                    <div class="gallery-thumb">
+                        <img src="{% static 'web/images/gallery/gallery-big.png' %}" alt="gallery">
+                    </div>
+                    <div class="gallery-content-area">
+                        <div class="row justify-content-center mb-30-none">
+                            <div class="col-xl-8 col-lg-8 mb-30">
+                                <div class="gallery-content">
+                                    <h3 class="title">Brand redesign meanwhile focusing product</h3>
+                                    <p>Pick our website architecture administrations, and your business can depend on 100% straightforwardness. From our customized statements to our underlying plans, our group gives your organization complete admittance to our website</p>
+                                    <p>Get free, exact, and moment quote for our website architecture and advancement administrations with our simple to-utilize number cruncher. Our group tailors our website composition administrations to your organization and its one of a kind requirements. That is the reason you can redo each component of our administrations to your organization, items or administrations, and objectives.</p>
+                                    <p>We expand the aftereffects of your web composition or upgrade plan, just as improve your advanced advertising methodology, by guaranteeing your site follows best practices for website streamlining (SEO). Web optimization alludes to an umbrella of strategies that upgrade your site’s positioning for significant list items. A higher positioning in list items relates to higher perceivability.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 mb-30">
+                                <div class="gallery-sidebar">
+                                    <div class="gallery-sidebar-widget">
+                                        <ul class="gallery-sidebar-widget-list">
+                                            <li>
+                                                <h5 class="title">Client</h5>
+                                                <span class="sub-title">ThemeIM Marketing Agency</span>
+                                            </li>
+                                            <li>
+                                                <h5 class="title">Date</h5>
+                                                <span class="sub-title">February 25, 2022</span>
+                                            </li>
+                                            <li>
+                                                <h5 class="title">Service</h5>
+                                                <span class="sub-title">Mobile App & Website Develop</span>
+                                            </li>
+                                            <li>
+                                                <h5 class="title">Web</h5>
+                                                <span class="sub-title">www.clientweb.com</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End Gallery
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Gallery-widget-item
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<section class="gallery-widget-item-section ptb-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-12">
+                <div class="gallery-widget-item-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="gallery-widget-item">
+                                <div class="gallery-widget-thumb">
+                                    <img src="{% static 'web/images/gallery/gallery-4.png' %}" alt="gallery">
+                                </div>
+                                <div class="gallery-widget-content">
+                                    <span class="sub-title">BRANDING ILLUSTRATION</span>
+                                    <h3 class="title"><a href="{% url 'web:servicedetails' %}">Corporate Software Solutions</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-widget-item">
+                                <div class="gallery-widget-thumb">
+                                    <img src="{% static 'web/images/gallery/gallery-3.png' %}" alt="gallery">
+                                </div>
+                                <div class="gallery-widget-content">
+                                    <span class="sub-title">BRANDING ILLUSTRATION</span>
+                                    <h3 class="title"><a href="{% url 'web:servicedetails' %}">Ecommerce Solutions</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-prev">
+                        <span>Previous Service</span>
+                    </div>
+                    <div class="slider-next">
+                        <span>Next Service</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End Gallery-widget-item
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Gallery
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<section class="gallery-section ptb-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8 text-center">
+                <div class="section-header">
+                    <h2 class="section-title">Related Service</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-30-none">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                <div class="gallery-item">
+                    <div class="gallery-thumb">
+                        <img src="{% static 'web/images/gallery/gallery-10.png' %}" alt="gallery">
+                        <div class="gallery-thumb-overlay">
+                            <div class="gallery-icon">
+                                <a class="img-popup" data-rel="lightcase:myCollection" href="{% static 'web/images/gallery/gallery-10.png' %}"><img src="{% static 'web/images/icon/icon-21.png' %}" alt="icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-content">
+                        <span class="sub-title">BRANDING ILLUSTRATION</span>
+                        <h3 class="title"><a href="{% url 'web:servicedetails' %}">Modern Technology</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                <div class="gallery-item">
+                    <div class="gallery-thumb">
+                        <img src="{% static 'web/images/gallery/gallery-2.png' %}" alt="gallery">
+                        <div class="gallery-thumb-overlay">
+                            <div class="gallery-icon">
+                                <a class="img-popup" data-rel="lightcase:myCollection" href="{% static 'web/images/gallery/gallery-2.png' %}"><img src="{% static 'web/images/icon/icon-21.png' %}" alt="icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-content">
+                        <span class="sub-title">BRANDING ILLUSTRATION</span>
+                        <h3 class="title"><a href="{% url 'web:servicedetails' %}">Corporate Software Solutions</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                <div class="gallery-item">
+                    <div class="gallery-thumb">
+                        <img src="{% static 'web/images/gallery/gallery-3.png' %}" alt="gallery">
+                        <div class="gallery-thumb-overlay">
+                            <div class="gallery-icon">
+                                <a class="img-popup" data-rel="lightcase:myCollection" href="{% static 'web/images/gallery/gallery-3.png' %}"><img src="{% static 'web/images/icon/icon-21.png' %}" alt="icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-content">
+                        <span class="sub-title">BRANDING ILLUSTRATION</span>
+                        <h3 class="title"><a href="{% url 'web:servicedetails' %}">Ecommerce Solutions</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End Gallery
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+
+
+{% endblock %}
