@@ -1,1 +1,0 @@
-web: gunicorn onflap.wsgi --log-file -
