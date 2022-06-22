@@ -13,3 +13,15 @@ def home(request):
 
 def contact(request):
     return render(request,'web/contact.html')
+
+
+def career(request):
+    return render(request,'web/career.html')
+
+
+def careerdetails(request):
+    return render(request,'web/careerdeatils.html')
+
+
+def careerapply(request):
+    return render(request,'web/careerapply.html')

@@ -1,0 +1,136 @@
+{% extends 'web/index.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'web/css/careerpage.css' %}">
+
+
+<section class="banner-section two inner">
+    <div class="banner-element-four two">
+        <img src="{% static 'web/images/element/element-5.png' %}" alt="element">
+    </div>
+    <div class="banner-element-five two">
+        <img src="{% static 'web/images/element/element-7.png' %}" alt="element">
+    </div>
+    <div class="banner-element-nineteen two">
+        <img src="{% static 'web/images/element/element-6.png' %}" alt="element">
+    </div>
+    <div class="banner-element-twenty-two two">
+        <img src="{% static 'web/images/element/element-69.png' %}" alt="element">
+    </div>
+    <div class="banner-element-twenty-three two">
+        <img src="{% static 'web/images/element/element-70.png' %}" alt="element">
+    </div>
+    <div class="container">
+        <div class="row justify-content-center align-items-center mb-30-none">
+            <div class="col-xl-12 mb-30">
+                <div class="banner-content two">
+                    <div class="banner-content-header">
+                        <h2 class="title">Career</h2>
+                        <div class="breadcrumb-area">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="{% url 'web:home' %}">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Career </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+End Banner
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Start Scroll-To-Top
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="#" class="scrollToTop"><i class="las la-angle-double-up"></i></a>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+End Scroll-To-Top
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div class="contact-section ptb-120">
+    <!-- Ui element start -->
+    <div class="job-listing-page  pd-top-112">
+        <div class="container">
+            <div class="job-position-area">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="section-title style-four">
+                            <h2 class="title">Open <span>Job</span> Positions</h2>
+                        </div>
+                        <!-- single job list -->
+                        <div class="single-job-list media">
+                            <img src="{% static 'web/images/riyastemp/j1.svg' %}" alt="icon">
+                            <div class="media-body">
+                                <h6>Property Agent For UK Office Required</h6>
+                                <span>August 29, 2019</span>
+                            </div>
+                            <a href="{% url 'web:careerdetails' %}"
+                                class="job-apply-btn align-self-center float-right">View</a>
+                        </div>
+                        <!-- single job list -->
+                        <div class="single-job-list media">
+                            <img src="{% static 'web/images/riyastemp/j2.svg' %}" alt="icon">
+                            <div class="media-body">
+                                <h6>Property Agent For UK Office Required</h6>
+                                <span>August 29, 2019</span>
+                            </div>
+                            <a href="{% url 'web:careerdetails' %}"
+                                class="job-apply-btn align-self-center float-right">View</a>
+                        </div>
+                        <!-- single job list -->
+                        <div class="single-job-list media">
+                            <img src="{% static 'web/images/riyastemp/j3.svg' %}" alt="icon">
+                            <div class="media-body">
+                                <h6>Property Agent For UK Office Required</h6>
+                                <span>August 29, 2019</span>
+                            </div>
+                            <a href="{% url 'web:careerdetails' %}"
+                                class="job-apply-btn align-self-center float-right">View</a>
+                        </div>
+                        <!-- single job list -->
+                        <div class="single-job-list media">
+                            <img src="{% static 'web/images/riyastemp/j4.svg' %}" alt="icon">
+                            <div class="media-body">
+                                <h6>Property Agent For UK Office Required</h6>
+                                <span>August 29, 2019</span>
+                            </div>
+                            <a href="{% url 'web:careerdetails' %}"
+                                class="job-apply-btn align-self-center float-right">View</a>
+                        </div>
+                        <!-- single job list -->
+                        <div class="single-job-list media">
+                            <img src="{% static 'web/images/riyastemp/j5.svg' %}" alt="icon">
+                            <div class="media-body">
+                                <h6>Property Agent For UK Office Required</h6>
+                                <span>August 29, 2019</span>
+                            </div>
+                            <a href="{% url 'web:careerdetails' %}"
+                                class="job-apply-btn align-self-center float-right">View</a>
+                        </div>
+                        <!-- single job list -->
+                        <div class="single-job-list media mb-0">
+                            <img src="{% static 'web/images/riyastemp/j6.svg' %}" alt="icon">
+                            <div class="media-body">
+                                <h6>Property Agent For UK Office Required</h6>
+                                <span>August 29, 2019</span>
+                            </div>
+                            <a href="{% url 'web:careerdetails' %}"
+                                class="job-apply-btn align-self-center float-right">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ui element End -->
+</div>
+
+
+
+
+{% endblock %}

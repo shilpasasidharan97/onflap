@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="{% static 'web/css/nice-select.css' %}">
     <!-- main style css link -->
     <link rel="stylesheet" href="{% static 'web/css/style.css' %}">
+
 </head>
 <body>
 
@@ -88,7 +89,7 @@
                                 </li>
                                 <li><a href="">Services</a></li>
                                 <li class="">
-                                    <a href="">Career</a>
+                                    <a href="{% url 'web:career' %}">Career</a>
                                 </li>
                                 <li><a href="{% url 'web:contact' %}">Contact</a></li>
                             </ul>
