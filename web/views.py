@@ -25,3 +25,11 @@ def careerdetails(request):
 
 def careerapply(request):
     return render(request,'web/careerapply.html')
+
+
+def service(request):
+    return render(request,'web/services.html')
+
+
+def servicedetails(request):
+    return render(request,'web/servicedetails.html')
