@@ -1,0 +1,144 @@
+{% extends 'web/index.html' %}
+{% block content %}
+{% load static %}
+
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Banner
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<section class="banner-section two inner">
+    <div class="banner-element-four two">
+        <img src="{% static 'web/images/element/element-5.png' %}" alt="element">
+    </div>
+    <div class="banner-element-five two">
+        <img src="{% static 'web/images/element/element-7.png' %}" alt="element">
+    </div>
+    <div class="banner-element-nineteen two">
+        <img src="{% static 'web/images/element/element-6.png' %}" alt="element">
+    </div>
+    <div class="banner-element-twenty-two two">
+        <img src="{% static 'web/images/element/element-69.pn' %}g" alt="element">
+    </div>
+    <div class="banner-element-twenty-three two">
+        <img src="{% static 'web/images/element/element-70.pn' %}g" alt="element">
+    </div>
+    <div class="container">
+        <div class="row justify-content-center align-items-center mb-30-none">
+            <div class="col-xl-12 mb-30">
+                <div class="banner-content two">
+                   <div class="banner-content-header">
+                        <h2 class="title">Categories</h2>
+                        <div class="breadcrumb-area">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Categories</li>
+                                </ol>
+                            </nav>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End Banner
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Scroll-To-Top
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="#" class="scrollToTop"><i class="las la-angle-double-up"></i></a>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End Scroll-To-Top
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Service
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<section class="service-section two ptb-120">
+    <div class="service-element-one">
+        <img src="{% static 'web/images/element/element-34.png' %}" alt="element">
+    </div>
+    <div class="service-element-two">
+        <img src="{% static 'web/images/element/element-35.png' %}" alt="element">
+    </div>
+    <div class="service-element-three">
+        <img src="{% static 'web/images/element/element-36.png' %}" alt="element">
+    </div>
+    <div class="service-element-four">
+        <img src="{% static 'web/images/element/element-36.png' %}" alt="element">
+    </div>
+    <div class="container">
+        <div class="row justify-content-center mb-30-none">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
+                <div class="service-item three">
+                    <div class="service-icon">
+                        <img src="{% static 'web/images/icon/icon-3.png' %}" alt="icon">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title"><a href="{% url 'web:categoryproduct' %}">Web Design</a></h3>
+                        <p>We rank among the best in the US, Argentina, and Ukraine. Our apps get</p>
+                        <div class="service-btn">
+                            <a href="{% url 'web:categoryproduct' %}" class="custom-btn">Learn More <i class="icon-Group-2361 ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
+                <div class="service-item three">
+                    <div class="service-icon">
+                        <img src="{% static 'web/images/icon/icon-4.png' %}" alt="icon">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title"><a href="">Digital Marketing</a></h3>
+                        <p>We rank among the best in the US, Argentina, and Ukraine. Our apps get</p>
+                        <div class="service-btn">
+                            <a href="" class="custom-btn">Learn More <i class="icon-Group-2361 ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
+                <div class="service-item three">
+                    <div class="service-icon">
+                        <img src="{% static 'web/images/icon/icon-5.png' %}" alt="icon">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title"><a href="">Search SEO</a></h3>
+                        <p>We rank among the best in the US, Argentina, and Ukraine. Our apps get</p>
+                        <div class="service-btn">
+                            <a href="" class="custom-btn">Learn More <i class="icon-Group-2361 ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
+                <div class="service-item three">
+                    <div class="service-icon">
+                        <img src="{% static 'web/images/icon/icon-6.png' %}" alt="icon">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title"><a href="">Web Development</a></h3>
+                        <p>We rank among the best in the US, Argentina, and Ukraine. Our apps get</p>
+                        <div class="service-btn">
+                            <a href="" class="custom-btn">Learn More <i class="icon-Group-2361 ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End Service
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+
+
+
+{% endblock %}
