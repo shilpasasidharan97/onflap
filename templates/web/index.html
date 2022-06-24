@@ -35,6 +35,8 @@
     <!-- main style css link -->
     <link rel="stylesheet" href="{% static 'web/css/style.css' %}">
 
+
+ 
 </head>
 <body>
 
@@ -66,13 +68,13 @@
             <div class="container custom-container">
                 <div class="header-menu-content">
                     <nav class="navbar navbar-expand-xl p-0">
-                        <a class="site-logo site-title" href=""><img src="{% static 'web/images/logo-three.png' %}" alt="site-logo"></a>
+                        <a class="site-logo site-title" href=""><img src="{% static 'web/logo.png' %}" style="width: 80px; height: 80px;" alt="site-logo"></a>
                         <button class="navbar-toggler d-block d-xl-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="toggle-bar"></span>
                         </button>
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                            <ul class="navbar-nav main-menu">
+                        <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+                            <ul class="navbar-nav main-menu ">
                                 <li class="">
                                     <a href="{% url 'web:home' %}">Home</a>
                                 </li>
@@ -184,7 +186,7 @@
                             <ul class="footer-social">
                                 <li><a href="#0"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#0"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#0"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#0"><i class="fab fa-linkedin-in"></i></a></li>
                                 <li><a href="#0"><i class="fab fa-instagram"></i></a></li>
                             </ul>
                         </div>
@@ -193,25 +195,22 @@
                         <div class="footer-widget">
                             <h4 class="title">Explore Softim</h4>
                             <ul class="footer-list">
-                                <li><a href="#0">Account</a></li>
-                                <li><a href="#0">Privacy Policy</a></li>
-                                <li><a href="#0">Affilitate</a></li>
-                                <li><a href="#0">Program</a></li>
-                                <li><a href="#0">Our Partner</a></li>
+                                <li class="">
+                                    <a href="{% url 'web:home' %}">Home</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'web:about' %}">About</a>
+                                </li>
+                               
+                                <li>
+                                    <a href="{% url 'web:career' %}">Career</a>
+                                </li>
+                                <li><a href="{% url 'web:contact' %}">Contact</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-6 mb-30">
-                        <div class="footer-widget">
-                            <h5 class="title">Quick Links</h5>
-                            <ul class="footer-list">
-                                <li><a href="#0">Account</a></li>
-                                <li><a href="#0">Privacy Policy</a></li>
-                                <li><a href="#0">Affilitate</a></li>
-                                <li><a href="#0">Program</a></li>
-                                <li><a href="#0">Our Partner</a></li>
-                            </ul>
-                        </div>
+                       
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
                         <div class="footer-widget">
@@ -228,13 +227,13 @@
     </div>
     <div class="copyright-wrapper two">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-12 text-center">
-                    <div class="copyright-area text-center">
-                        <div class="footer-logo">
-                            <a class="site-logo site-title" href=""><img src="{% static 'web/images/logo-two.png' %}" alt="site-logo"></a>
+            <div class="row justify-content-center  ">
+                <div class="col-xl-12    ">
+                    <div class="copyright-area ">
+                        <div class="footer-logo mx-auto">
+                            <a class="site-logo site-title" href="{% url 'web:home' %}"><img src="{% static 'web/images/logo-two.png' %}" alt="site-logo"></a>
                         </div>
-                        <!-- <p>Copyright © 2022 <a href="index.html">Softim</a>. All Rights Reserved. Designed by ThemeIM</p> -->
+                       <p>© Copyright 2019 Onflap - All Rights Reserved</p>
                     </div>
                 </div>
             </div>
