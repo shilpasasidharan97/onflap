@@ -31,8 +31,10 @@
                         <div class="breadcrumb-area">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Service Single</li>
+                                    <li class="breadcrumb-item"><a href="{% url 'web:home' %}">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="{% url 'web:category' %}">Category</a></li>
+                                    <li class="breadcrumb-item"><a href="{% url 'web:categoryproduct' %}">Product</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">PRODUCT NAME</li>
                                 </ol>
                             </nav>
                         </div>
