@@ -1,26 +1,23 @@
 from django.urls import path
 from . import views
 
-app_name='web'
+app_name = 'web'
 
 urlpatterns = [
+    path('base', views.base, name='base'),
+    path('', views.home, name='home'),
 
-    path('master',views.master,name='master'), 
+    path('productenquiry/<int:id>', views.productEnquiry, name='productenquiry'),
+    path('productdetails/<int:id>', views.productdetails, name='productdetails'),
 
-    path('',views.home,name='home'),
+    path('about', views.about, name='about'),
 
-    path('about',views.about,name='about'),
+    path('career', views.career, name='career'),
+    path('careerdetails/<int:id>', views.careerDetails, name='careerdetails'),
+    path('applynow/<int:id>', views.applynow, name='applynow'),
 
-    path('category',views.category,name='category'),
-    path('categoryproduct',views.categoryproduct,name='categoryproduct'),
-    path('productdetails',views.productdetails,name='productdetails'),
+    path('contact', views.contact, name='contact'),
 
-    path('career',views.career,name='career'),
-    path('careerdetails',views.careerdetails,name='careerdetails'),
-    path('careerapply',views.careerapply,name='careerapply'),
-    
-    path('service',views.service,name='service'),
-    path('servicedetails',views.servicedetails,name='servicedetails'),
-
-    path('contact',views.contact,name='contact'),
+    path('indianbenfits', views.indianBenfits, name="indianbenfits"),
+    path('kuwaitbenfits', views.kuwaitBenefits, name="kuwaitbenfits"),
 ]

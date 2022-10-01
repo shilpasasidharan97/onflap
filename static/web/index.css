@@ -1,0 +1,30 @@
+@media only screen and (max-width: 430px) {
+    .filterh6 {
+        font-size: 20px;
+        padding: 0px 35px 0px 33px;
+    }
+
+    .about-right p {
+        /* padding: 0px 35px 0px 33px; */
+        padding: 0px 12px 0px 12px;
+    }
+
+    .how-we-work {
+        display: flex;
+        align-items: center;
+        margin-left: -26px;
+    }
+
+    .card {
+        margin-bottom: 1px;
+    }
+}
+
+.card {
+    margin-bottom: 1px;
+}
+.review_img {
+    width: 12rem;
+    border-radius: 5rem;
+    margin-top: -5rem;
+}

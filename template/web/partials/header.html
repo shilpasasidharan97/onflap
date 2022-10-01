@@ -1,0 +1,40 @@
+{% load static %}
+
+
+<header class="header">
+    <div class="main-navigation">
+        <div class="navbar navbar-expand-lg bsnav bsnav-sticky bsnav-sticky-slide bsnav-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'web:home' %}">
+                    <img src="{% static 'web/logo.svg' %}" class="logo-display  " alt="thumb" width="200">
+                    <img src="{% static 'web/logo.svg' %}" class="logo-scrolled " alt="thumb" width="150">
+                    <!-- <img src="{% static 'web/logo.svg' %}" class="logo-scrolled" alt="thumb"> -->
+                </a>
+                <button class="navbar-toggler toggler-spring">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-sm-end">
+                    <ul class="navbar-nav navbar-mobile ml-auto">
+
+                        <li {% if is_house %} class="active nav-item" {% elif is_productdetails %} class="active nav-item" {% endif %}>
+                            <a class="nav-link" href="{% url 'web:home' %}">Home</a>
+                        </li>
+                        <li {% if is_productdetails %} class=" nav-item" {% endif %}>
+                            <a class="nav-link" href="">Products & Services</a>
+                        </li>
+                        <li {% if is_career %} class="active nav-item" {% elif is_careerDetails %} class="active nav-item" {% elif is_applynow %} class="active nav-item" {% elif is_benefits%} class="active nav-item" {% endif %}>
+                            <a class="nav-link" href="{% url 'web:career' %}">Career</a>
+                        </li>
+                        <li {% if is_contact %} class="active nav-item" {% endif %}>
+                            <a class="nav-link" href="{% url 'web:contact' %}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bsnav-mobile">
+            <div class="bsnav-mobile-overlay"></div>
+            <div class="navbar"></div>
+        </div>
+    </div>
+</header>

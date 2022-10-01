@@ -1,0 +1,144 @@
+{% extends 'web/partials/base.html' %}
+{% block content %}
+{% load static %}
+
+
+
+<!-- main style css link -->
+<!-- <link rel="stylesheet" href="{% static 'career/css/careerpage.css' %}"> -->
+<link rel="stylesheet" href="{% static 'sof/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'web/product.css' %}">
+
+
+
+<main class="main">
+
+    <!-- Start Breadcrumb
+    ============================================= -->
+    <div class="site-breadcrumb" style="background: url({% static 'web/img/breadcrumb/breadcrumb.png' %})">
+        <div class="container wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+            <h2 class="breadcrumb-title">Product Details</h2>
+            <ul class="breadcrumb-menu">
+                <li><a href="{% url 'web:home' %}" style="color: grey;">Back To Home</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <!-- End  Breadcrumb -->
+
+    <!-- Start Blog-Content
+    ============================================= -->
+
+    <div class="single-area de-padding">
+        <div class="container">
+            <div class="prdcty-sec">
+                <div class="prdcty-inrsec">
+                    <div class="cstmr-cntnt-sec">
+                        <p class="label-txt blck-txt">{{productdetail.heading1}}</p>
+                        <h4 class="inner-hdr" style="font-weight: 500;color: black;">
+                            {{productdetail.heading2}}
+                        </h4>
+                        <p>
+                            {{productdetail.description}}
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End  Blog-Content -->
+
+
+
+    <!-- introoooo -->
+
+    <section class="banner-section two">
+        <div class="container">
+            <div class="row justify-content-center align-items-center mb-30-none">
+                <div class="col-xl-12 mb-30">
+                    <div class="banner-content two">
+                        <!-- <div class="banner-content-header" data-aos="fade-up" data-aos-duration="1200">
+                            <h1 class="title">Soft i'm Developers</h1>
+                            <h1 class="title">Impressive Experience</h1>
+                       </div> -->
+                        <div class="banner-area">
+                            <div class="contact-page-info">
+                                <div class="">
+                                    <div class="widget widget-job-details" style="padding: 7px 95px;">
+                                        <div class="media single-job-details">
+                                        {% for f in detail %}
+                                            <img src="{% static 'web/img/tick-01.png' %}" alt="icon">
+                                            <div class="media-body">
+                                                <h6>
+                                                {{f.features__features}}
+                                                    {% comment %} {{productdetail.features|safe}} {% endcomment %}
+                                                </h6>
+                                            </div>
+                                        {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {% comment %} <!-- <div class="contact-right">
+                                    <div class="widget widget-job-details">
+                                        <div class="media single-job-details">
+                                            <img src="{% static 'web/img/tick-01.png' %}" alt="icon">
+                                            <div class="media-body">
+                                                <h6>qweryuiopl jkhjgj fcfsdxf gfdtydrtdrtdghf gytdtydtrdg hgyyftygb
+                                                    fyhdydv hgyt tfg </h6>
+                                            </div>
+                                        </div>
+                                        <div class="media single-job-details">
+                                            <img src="{% static 'web/img/tick-01.png' %}" alt="icon">
+                                            <div class="media-body">
+                                                <h6>qweryuiopl jkhjgj fcfsdxf gfdtydrtdrtdghf gytdtydtrdg hgyyftygb
+                                                    fyhdydv hgyt tfg </h6>
+                                            </div>
+                                        </div>
+                                        <div class="media single-job-details">
+                                            <img src="{% static 'web/img/tick-01.png' %}" alt="icon">
+                                            <div class="media-body">
+                                                <h6>qweryuiopl jkhjgj fcfsdxf gfdtydrtdrtdghf gytdtydtrdg hgyyftygb
+                                                    fyhdydv hgyt tfg </h6>
+                                            </div>
+                                        </div>
+                                        <div class="media single-job-details">
+                                            <img src="{% static 'web/img/tick-01.png' %}" alt="icon">
+                                            <div class="media-body">
+                                                <h6>qweryuiopl jkhjgj fcfsdxf gfdtydrtdrtdghf gytdtydtrdg hgyyftygb
+                                                    fyhdydv hgyt tfg </h6>
+                                            </div>
+                                        </div>
+                                        <div class="media single-job-details">
+                                            <img src="{% static 'web/img/tick-01.png' %}" alt="icon">
+                                            <div class="media-body">
+                                                <h6>qweryuiopl jkhjgj fcfsdxf gfdtydrtdrtdghf gytdtydtrdg hgyyftygb
+                                                    fyhdydv hgyt tfg </h6>
+                                            </div>
+                                        </div>
+                                        <div class="media single-job-details">
+                                            <img src="{% static 'web/img/tick-01.png' %}" alt="icon">
+                                            <div class="media-body">
+                                                <h6>qweryuiopl jkhjgj fcfsdxf gfdtydrtdrtdghf gytdtydtrdg hgyyftygb
+                                                    fyhdydv hgyt tfg </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> --> {% endcomment %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end introooo -->
+
+</main>
+
+
+{% endblock %}
+
+
+
